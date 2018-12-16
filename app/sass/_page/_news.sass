@@ -1,0 +1,70 @@
+.article
+	padding: 75px 0 100px
+
+
+	h1
+		font-size: 24px
+		line-height: 1.1
+		background: $accent
+		padding: 17px 40px
+		margin-bottom: 40px
+
+	li
+		list-style-type: circle
+		font-weight: 600
+		margin-left: 20px
+		margin-bottom: 15px
+
+	ol
+		li
+			list-style-type: decimal
+
+	p
+		margin-bottom: 25px
+
+	&__banner
+		position: relative
+		height: 450px
+		margin-bottom: 70px
+
+		img
+			height: 100%
+
+
+	&__title
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translate(0, -50%)
+		max-width: 530px
+		display: flex
+		align-items: flex-end
+		flex-direction: column
+
+		a
+			position: relative
+			line-height: 1
+			color: #000
+
+			&:hover
+				color: #000
+
+				&::before
+					left: -20px
+
+			&::before
+				content: ''
+				position: absolute
+				left: -10px
+				top: 4px
+				width: 7px
+				height: 7px
+				border-top: 2px solid #000
+				border-left: 2px solid #000
+				transform: rotate(-45deg)
+				transition: all .3s
+			
+
+
+		
+

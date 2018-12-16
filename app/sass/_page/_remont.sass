@@ -1,0 +1,149 @@
+
+.remont
+	padding-top: 165px
+	padding-bottom: 45px
+	background-image: url(../img/remont-bg.jpg)
+	background-repeat: no-repeat
+	background-size: contain
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&__item
+		width: 31.6%
+		
+		&_title
+			padding: 25px 0
+			background: $accent
+			text-align: center
+			line-height: 1.1
+
+		&_content
+			position: relative
+			width: 100%
+			height: 370px
+			z-index: 1
+			overflow: hidden
+			cursor: pointer
+
+			&::before
+				content: ''
+				position: absolute
+				right: 0
+				top: -120%
+				left: 0
+				height: 100%
+				background: rgba(54, 54, 54, .86)
+				z-index: -1
+				transition: all .6s
+
+			&:hover
+				box-shadow: 0 0 12px rgba($text, .5)
+
+				&::before
+					top: 0
+
+				p
+					top: 0
+
+			img
+				position: absolute
+				right: 0
+				top: 0
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: -2
+
+			p
+				position: absolute
+				right: 0
+				top: -120%
+				left: 0
+				height: 100%
+				color: #fff
+				padding: 25px
+				line-height: 1.15
+				z-index: 1
+				transition: all .6s
+
+.price
+	padding-bottom: 115px
+
+	.title
+		margin-right: 0
+		margin-left: auto
+
+		h2
+			text-align: right
+
+		b
+			right: auto
+			left: 0
+			padding-left: 5px
+
+	.button
+		width: 100%
+		height: 60px
+		margin-bottom: 10px
+		line-height: 60px
+		font-weight: 700
+		font-size: 14px
+
+	.element-item
+		width: 100%
+	
+	&__top
+		padding: 24px 35px 24px 50px
+		background-color: #46403c
+		color: #fff
+		display: flex
+		justify-content: space-between
+
+		b
+			&:nth-child(1)
+				width: 45%
+
+			&:nth-child(2)
+				width: 25%
+				text-align: center
+
+			&:nth-child(3)
+				width: 25%
+				text-align: center
+
+
+	&__center
+		
+		h3
+			font-size: 14px
+			line-height: 1
+			font-weight: 700
+			text-align: center
+			padding: 17px 0
+
+		li
+			padding: 10px 35px 10px 50px
+			display: flex
+			justify-content: space-between
+
+			&:nth-child(odd)
+				background: #f7f7f7
+
+			span
+				&:nth-child(1)
+					width: 45%
+
+				&:nth-child(2)
+					width: 25%
+					text-align: center
+					
+				&:nth-child(3)
+					width: 25%
+					text-align: center
+
+
+

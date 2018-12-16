@@ -1,0 +1,43 @@
+.btn
+	position: relative
+	display: inline-block
+	height: 44px
+	border: none
+	outline: none
+	padding: 0 33px
+	background: $accent
+	text-align: center
+	text-transform: uppercase
+	font-size: 12px
+	color: #000
+	line-height: 44px
+	font-weight: 700
+	letter-spacing: .2px
+
+	&:hover, &:focus
+		outline: none
+		border: none
+		text-decoration: none
+		cursor: pointer
+		transition: all .3s
+		box-shadow: 0 0 8px rgba($text, .2)
+		color: #000
+
+.button
+	border: 1px solid $accent
+	background: #fff
+	transition: all .3s
+	height: 30px
+	line-height: 30px
+	text-transform: none
+	margin-right: 30px
+	font-weight: 400
+	padding: 0 10px
+
+	&:hover, &:focus, 
+		background: $accent
+		border: 1px solid $accent
+
+.is-checked
+	background: $accent
+	border: 1px solid $accent
